@@ -55,7 +55,7 @@ try:
         sock.close()
 
 except KeyboardInterrupt:
-    print "Ctrl+C pressed, now exiting z4pp3r"
+    print "Shortcut recognized, now exiting z4pp3r"
     sys.exit()
 
 except socket.gaierror:
