@@ -1,0 +1,299 @@
+<!--
+	  /*~~~~~~~~~~~~~~~~~~~~~~~~~*\
+	  |~#########################~|
+	  |~        DSR Deface       ~|
+	  |~      Version: 1.0.0     ~|
+	  |~ Developed by @H3XtheG0D ~|
+    |~#########################~|
+|~#################################~|
+|~              Greetz:            ~|
+|~  Yum1337, iQwertyUser, Ag3nt0x  ~|
+|~#################################~|
+	  |~#########################~|
+	  |~     Dox, Swat, Root     ~|
+	  |~         [~]DSR          ~|
+	  |~#########################~|
+	  \*~~~~~~~~~~~~~~~~~~~~~~~~~*/
+-->
+
+<html>
+	<!-- CSS -->
+	<style type=text/css>
+		BODY {
+			SCROLLBAR-FACE-COLOR: #000000;
+			SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+			SCROLLBAR-SHADOW-COLOR: #000000;
+			SCROLLBAR-BASE-COLOR: #000000;
+			cursor: crosshair;
+			background-image: url('http://tinyurl.com/oebjzzz');
+		}
+		A {
+			color: #FFFF00;
+			font-family: courier;
+			font-size: 16px;
+		}
+		A:HOVER {
+			color: #FFFF00;
+			font-family: courier;
+			font-size: 16px;
+		}
+		A:CLICKED {
+			color: #FFFF00;
+			font-family: courier;
+			font-size: 16px;
+		}
+		#CONTAINER {
+            width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #CONTENT {
+            background-color: black;
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+		.RED {
+			color: #FF0000;
+			font-family: courier;
+			font-size: 16px;
+		}
+		.ORANGE {
+			color: #FFA500;
+			font-family: courier;
+			font-size: 16px;
+		}
+		.YELLOW {
+			color: #FFFF00;
+			font-family: courier;
+			font-size: 16px;
+		}
+		.LIME {
+			color: #00FF00;
+			font-family: courier;
+			font-size: 16px;
+		}
+		.BLUE {
+			color: #0000FF;
+			font-family: courier;
+			font-size: 16px;
+		}
+		.PURPLE {
+			color: #800080;
+			font-family: courier;
+			font-size: 16px;
+		}
+		.REDWRITER {
+			color: #FF0000;
+			font-family: courier;
+			font-size: 16px;
+			display: none;
+		}
+		.ORANGEWRITER {
+			color: #FFA500;
+			font-family: courier;
+			font-size: 16px;
+			display: none;
+		}
+		.YELLOWWRITER {
+			color: #FFFF00;
+			font-family: courier;
+			font-size: 16px;
+			display: none;
+		}
+		.LIMEWRITER {
+			color: #00FF00;
+			font-family: courier;
+			font-size: 16px;
+			display: none;
+		}
+		.BLUEWRITER {
+			color: #0000FF;
+			font-family: courier;
+			font-size: 16px;
+			display: none;
+		}
+		.PURPLEWRITER {
+			color: #800080;
+			font-family: courier;
+			font-size: 16px;
+			display: none;
+		}
+		.SHOW {
+			z-index: 2;
+		}
+		.HIDE {
+			z-index: 1;
+		}
+	</style>
+	<!-- Javascript -->
+	<script type="text/javascript">
+		var message = "No, No, No - Nyanamous The Kiddie";
+		
+		function clickIE4(){
+			if (event.button==2){
+				alert(message);
+				return false;
+			}
+		}
+		
+		function clickNS4(e){
+			if (document.layers||document.getElementById&&!document.all){
+				if (e.which==2||e.which==3){
+					alert(message);
+					return false;
+				}
+			}
+		}
+		
+		if (document.layers){
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown=clickNS4;
+		}
+		else if (document.all&&!document.getElementById){
+			document.onmousedown=clickIE4;
+		}
+
+		document.oncontextmenu=new Function("alert(message);return false")
+	</script>
+	<script type="text/javascript">
+		    	TypingText = function(element, interval, cursor, finishedCallback) {
+			  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+				this.running = true;	// Never run.
+				return;
+			  }
+			  this.element = element;
+			  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+			  this.interval = (typeof interval == "undefined" ? 100 : interval);
+			  this.origText = this.element.innerHTML;
+			  this.unparsedOrigText = this.origText;
+			  this.cursor = (cursor ? cursor : "<");
+			  this.currentText = "";
+			  this.currentChar = 0;
+			  this.element.typingText = this;
+			  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+			  TypingText.all.push(this);
+			  this.running = false;
+			  this.inTag = false;
+			  this.tagBuffer = "";
+			  this.inHTMLEntity = false;
+			  this.HTMLEntityBuffer = "";
+			}
+			TypingText.all = new Array();
+			TypingText.currentIndex = 0;
+			TypingText.runAll = function() {
+			  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+			}
+			TypingText.prototype.run = function() {
+			  if(this.running) return;
+			  if(typeof this.origText == "undefined") {
+				setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
+				return;
+			  }
+			  if(this.currentText == "") this.element.innerHTML = "";
+			//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+			  if(this.currentChar < this.origText.length) {
+				if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+				  this.tagBuffer = "<";
+				  this.inTag = true;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+				  this.tagBuffer += ">";
+				  this.inTag = false;
+				  this.currentText += this.tagBuffer;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.inTag) {
+				  this.tagBuffer += this.origText.charAt(this.currentChar);
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+				  this.HTMLEntityBuffer = "&";
+				  this.inHTMLEntity = true;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+				  this.HTMLEntityBuffer += ";";
+				  this.inHTMLEntity = false;
+				  this.currentText += this.HTMLEntityBuffer;
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else if(this.inHTMLEntity) {
+				  this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+				  this.currentChar++;
+				  this.run();
+				  return;
+				} else {
+				  this.currentText += this.origText.charAt(this.currentChar);
+				}
+				this.element.innerHTML = this.currentText;
+				this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+				this.currentChar++;
+				setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+			  } else {
+				this.currentText = "";
+				this.currentChar = 0;
+					this.running = false;
+					this.finishedCallback();
+			  }
+			}
+	</script>
+	<title> DSR H4CK1NG CR3W </title>
+	<div id="DEFACE" class="SHOW">
+	<center>
+		<img src="http://tinyurl.com/qbzcsqy">
+		<br>
+		<br>
+		<div id="CONTAINER">
+			<div id="CONTENT">
+				<span class="PURPLE"><marquee loop="true" direction="right">############################################################################################################</marquee></span>
+				<br>
+				<br>
+				<span class="REDWRITER" id="TW1">DSR has arrived, sit back and enjoy the show ;)</span>
+				<br>
+				<span class="ORANGEWRITER" id="TW2">You have been defaced, don't worry we didnt't cause to much damage</span>
+				<br>
+				<br>
+				<span class="YELLOWWRITER" id="TW3">Our message to your Admins & Web-Masters:</span>
+				<br>
+				<span class="LIMEWRITER" id="TW4">In order to have a good site you must have good security, which you do not.</span>
+				<br>
+				<span class="BLUEWRITER" id="TW5">Secure your site or we will be back again!</span>
+				<br>
+				<span class="PURPLEWRITER" id="TW6">~#~ DSR Was Here ~#~</span>
+				<br>
+				<img src="http://tinyurl.com/pjfq3cm">
+				<br>
+				<br>
+				<span class="RED">Greetz:</span>
+				<br>
+				<span class="ORANGE">Yum1337, H3X THE G0D, iQwertyUser, Ag3nt0x, Warfare, D.E.R.P.S.E.C, LulzSecINT</span>
+				<br>
+				<br>
+				<span class="YELLOW"><a href="https://www.twitter.com/W3rDSR">Follow Us On Twitter</a></span>
+				<br>
+				<br>
+				<span class="LIME"><marquee loop="true" direction="left">############################################################################################################</marquee></span>
+			</div>
+		</div>
+	</center>
+	<script type="text/javascript">
+		new TypingText(document.getElementById("TW1"));
+		new TypingText(document.getElementById("TW2"));
+		new TypingText(document.getElementById("TW3"));
+		new TypingText(document.getElementById("TW4"));
+		new TypingText(document.getElementById("TW5"));
+		new TypingText(document.getElementById("TW6"));
+		setTimeout(function(){document.getElementById("TW1").style.display = 'inline';TypingText.all[0].run();},0);
+		setTimeout(function(){document.getElementById("TW2").style.display = 'inline';TypingText.all[1].run();},5000);
+		setTimeout(function(){document.getElementById("TW3").style.display = 'inline';TypingText.all[2].run();},12000);
+		setTimeout(function(){document.getElementById("TW4").style.display = 'inline';TypingText.all[3].run();},16000);
+		setTimeout(function(){document.getElementById("TW5").style.display = 'inline';TypingText.all[4].run();},24000);
+		setTimeout(function(){document.getElementById("TW6").style.display = 'inline';TypingText.all[5].run();},29000);
+	</script>
+</html>
