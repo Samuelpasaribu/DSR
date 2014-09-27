@@ -1,18 +1,18 @@
-<!--
-	/*##########################*\
-	|~    Official DSR Shell    ~|
-	|~      Version: 1.0.0      ~|
-	|~ Developed by: @H3XtheG0D ~|
+<!-
+    /*##########################*\
+    |~    Official DSR Shell    ~|
+    |~      Version: 1.0.0      ~|
+    |~ Developed by: @H3XtheG0D ~|
 ######################################
 #    For support contact me via:~    #
 #         Twitter: @H3XtheG0D        #
 #     Email: h3xtheg0d@gmail.com     #
 ######################################
-	|~      Dox, Swat, Root     ~|
-	|~ You can't arrest a idea. ~|
-	|~ [~]Yum [~]H3X [~]iQwerty ~|
-	|~           #DSR           ~|
-	\*##########################*/
+    |~      Dox, Swat, Root     ~|
+    |~ You can't arrest a idea. ~|
+    |~ [~]Yum [~]H3X [~]iQwerty ~|
+    |~           #DSR           ~|
+    \*##########################*/
 -->
 
 <title>Official DSR Shell</title>
