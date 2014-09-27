@@ -55,7 +55,7 @@ try:
         sock.close()
 
 except KeyboardInterrupt:
-    print "You pressed Ctrl+C"
+    print "Ctrl+C pressed, now exiting z4pp3r"
     sys.exit()
 
 except socket.gaierror:
