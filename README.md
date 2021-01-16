@@ -73,6 +73,6 @@ Halo nama saya samuel, kini saya belum bekerja dan masih fokus belajar menjadi s
 
 "Berikan seekor ikan kepada seseorang, maka Anda memnberikan ia makan untuk 1 hari. Ajarkan seseorang cara menangkap ikan, maka Anda memberikan ia makan seumur hidup."
 
-Sekarang saya sedang belajar mengembangkan sebuah game untuk <i>giveaway</i> dimana pada game ini saya buat untuk para pegiat sosial media yang ingin giveway hadiah kepada pengikutnnya hehehe masih angan-angan saja (coba aja dulu). Sekalian mengembangkan project tersebut saya juga biasa menulis untuk melatih <i>skill fast typing</i> disini <a href="https://codinglan.blogspot.com"><b>codinglan</b></a> <i>Know me better</i> <a href="https://samuelpasaribu.github.io"><b>READ MORE</b></a>
+Sekarang saya sedang belajar mengembangkan sebuah game untuk <i>giveaway</i> dimana pada <i>game</i> ini saya buat untuk para pegiat sosial media yang ingin <i>giveway</i> hadiah kepada pengikutnnya hehehe masih angan-angan saja (coba aja dulu). Sekalian mengembangkan <i>project</i> tersebut saya juga biasa menulis untuk melatih <i>skill fast typing</i> disini <a href="https://codinglan.blogspot.com"><b>codinglan</b></a> <i>Know me better</i> <a href="https://samuelpasaribu.github.io"><b>READ MORE</b></a>
 
 [https://github.com/samuelpasaribu](https://github.com/samuelpasaribu)
